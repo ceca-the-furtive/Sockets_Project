@@ -117,7 +117,7 @@ public class ClienteChat extends JFrame implements ActionListener, Runnable {
 		}
 
 		try {
-			s = new Socket("localhost", puerto);
+			s = new Socket("192.168.0.14", puerto);
 			ClienteChat cliente = new ClienteChat(s, nombre);
 			cliente.setBounds(0, 0, 540, 400);
 			cliente.setVisible(true);
